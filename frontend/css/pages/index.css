@@ -3,3 +3,37 @@
 @import url(../base/typography.css);
 @import url(../components/button.css);
 @import url(../components/card.css);
+@import url(../components/loginform.css);
+@import url(../components/navigation.css);
+
+*{
+    box-sizing: border-box;
+}
+body {
+
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+    color: #08285a;
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
