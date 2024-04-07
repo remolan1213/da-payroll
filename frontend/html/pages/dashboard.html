@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../../css/pages/index.css"> <!-- Adjust the href as needed -->
-</head>
-<body>
-
+    <link rel="stylesheet" href="../../css/pages/index.css" />
+    <!-- Adjust the href as needed -->
+  </head>
+  <body>
     <!-- Header include -->
-<!-- Header include -->
+    <!-- Header include -->
     <script>
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(text => {
-                document.querySelector('body').insertAdjacentHTML('afterbegin', text);
-            });
-    </script>
+      fetch("../components/header.html")
+        .then((response) => response.text())
+        .then((text) => {
+          document.querySelector("body").insertAdjacentHTML("afterbegin", text);
+        });
 
-    <!-- Main content of the dashboard goes here -->
-    <main>
-        <!-- Your dashboard content -->
-    </main>
-
-    <!-- Footer include -->
-<script>
-    fetch('../components/footer.html')
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector('body').insertAdjacentHTML('beforeend', html);
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.querySelector("body").insertAdjacentHTML("beforeend", html);
         })
-        .catch(error => console.error('Error loading footer:', error));
-</script>
-
-</body>
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
 </html>
