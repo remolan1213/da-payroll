@@ -1,17 +1,18 @@
 /* frontend/css/base/typography.css */
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: var(--font-weight-lightweight);
   line-height: 1.5;
-  color: #333;
+  color: (--main-text-color)
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   line-height: 1.2;
-  color: #08285a;
+  color: var(--main-text-color);
 }
 
 h1 {
@@ -54,3 +55,11 @@ a:hover {
 }
 
 /* Add additional typography styles as needed */
+footer {
+  font-weight: var(--font-weight-lightweight);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

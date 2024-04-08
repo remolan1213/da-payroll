@@ -5,13 +5,25 @@
 @import url(../components/card.css);
 @import url(../components/loginform.css);
 @import url(../components/navigation.css);
+@import url(../components/input-worker.css);
 
-*{
-    box-sizing: border-box;
+:root {
+  --main-text-color: #040930;
+  --background-color: #f9fafa;
+  --second-background-color:#ededf1;
+  --text-color-with-background: white;
+  --text-color: #333;
+  --second-text-color: #08285a;
+  --font-weight-lightweight: 300; /* Light weight */
+  --font-weight-semi-bold: 600; /* Semi-bold weight */
+  --border-color: #ddd;
+  --button-color-hover:#424c94;
+  --button-color:#2b378c;
+  --nav-background-color: #6b6b97;
 }
-body {
 
-  background-color: #f0f2f5;
+body {
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,18 +34,4 @@ body {
   box-sizing: border-box;
 }
 
-h1{
-    color: #08285a;
-    font-size: 2rem;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
 

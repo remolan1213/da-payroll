@@ -4,25 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  />
     <link rel="stylesheet" href="../../css/pages/index.css" />
     <!-- Adjust the href as needed -->
   </head>
   <body>
     <!-- Header include -->
-    <!-- Header include -->
-    <script>
-      fetch("../components/header.html")
-        .then((response) => response.text())
-        .then((text) => {
-          document.querySelector("body").insertAdjacentHTML("afterbegin", text);
-        });
-
-      fetch("../components/footer.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.querySelector("body").insertAdjacentHTML("beforeend", html);
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
+<script src="../../js/pages/dashboard.js"></script>
   </body>
 </html>

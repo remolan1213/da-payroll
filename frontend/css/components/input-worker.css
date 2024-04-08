@@ -1,0 +1,55 @@
+#worker-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 400px;
+  background-color: var(--second-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: space-between; /* Distribute space evenly between children */
+}
+
+.worker-field {
+  font-family: "Montserrat", sans-serif;
+  width: 100%; /* Ensure both input and button take full width */
+  height: 20px; /* Adjust height as needed */
+  margin-bottom: 5px; /* Add margin to the bottom of each field */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--main-text-color);
+  text-transform: uppercase;
+}
+#save-button {
+  font-family: "Montserrat", sans-serif;
+  width: 100%; /* Ensure both input and button take full width */
+  height: 30px; /* Adjust height as needed */
+  margin-bottom: 10px; /* Add margin to the bottom of each field */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--text-color-with-background);
+  margin-top: 10px; /* Add margin to the top of the button */
+  background-color: var(
+    --button-color
+  ); /* Ensure the button has a background color */
+}
+#save-button:hover {
+  background-color: var(--button-color-hover);
+}
+#box-title {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: var(--main-text-color);
+  font-weight: var(--font-weight-semi-bold);
+  padding-left: 5px; /* Adjust padding to only apply to the left */
+  padding-right: 15px; /* Adjust padding to only apply to the right */
+  text-align: left;
+  margin-bottom: 10px; /* Add margin to the bottom for spacing */
+}
