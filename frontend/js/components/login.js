@@ -1,22 +1,14 @@
-function submitForm(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-
-    // Serialize form data into JSON
-    var data = JSON.stringify({
-        username: username,
-        password: password
-    });
-
-    // Make a POST request to the Postman mock server
-    fetch('https://a0a2add1-927f-4e47-a175-6c5a4e6e4c05.mock.pstmn.io/info', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: data
-    })
-    .then(response => response.json())
-    .catch(error => console.error('Error:', error));
-}
+// login.js
+document.getElementById('login-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    try {
+        const response = await axios.post('https://9c0a39ce-8d58-4d23-8bd6-5b180d54b691.mock.pstmn.io', { username, password });
+        console.log(response.data); // Handle response from server
+    } catch (error) {
+        console.error(error);
+    }
+});
