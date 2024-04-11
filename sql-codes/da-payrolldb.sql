@@ -1,3 +1,5 @@
+-- this is a sql code generated from Navicate premium
+
 CREATE TABLE "company" (
   "company_id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
   "company_name" text(45) NOT NULL
