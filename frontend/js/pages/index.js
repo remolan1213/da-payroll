@@ -3,7 +3,7 @@ fetch("../components/login.html")
 .then((html) => {
   document.querySelector("body").insertAdjacentHTML("beforeend", html);
 })
-.catch((error) => console.error("Error loading footer:", error));
+.catch((error) => console.error("Error loading flogin:", error));
 
 // <!-- Footer include -->
 fetch("../components/footer.html")

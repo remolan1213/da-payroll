@@ -1,4 +1,4 @@
-@import url(about.css);
+/* @import url(about.css);
 @import url(../base/reset.css);
 @import url(../base/typography.css);
 @import url(../components/button.css);
@@ -15,23 +15,12 @@
   --text-color: #333;
   --second-text-color: #08285a;
   --font-weight-lightweight: 300; /* Light weight */
-  --font-weight-semi-bold: 600; /* Semi-bold weight */
-  --border-color: #ddd;
+  /* --font-weight-semi-bold: 600; Semi-bold weight */
+  /* --border-color: #ddd;
   --button-color-hover:#424c94;
   --button-color:#2b378c;
   --nav-background-color: #6b6b97;
-}
+} */
 
-body {
-  background-color: var(--background-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
